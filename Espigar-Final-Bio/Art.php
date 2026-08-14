@@ -24,9 +24,9 @@
         <img src="https://scontent.fceb6-3.fna.fbcdn.net/v/t39.30808-6/490567233_2756078684584953_1887635182503535852_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEoSCypjP7NHucW3VKVN9GI3YEidKZ20W7dgSJ0pnbRbnoI-O57Do3RTjohzZbed6cLMAR6FRGMLTR7FeQt_9jN&_nc_ohc=0CSve01huosQ7kNvwHcJISE&_nc_oc=Adq2HfKjKT5sZRdV5kVGnjynjIG9j3Rq9L3J5iH8V6IPzX_vyjLvsqkJXExGcEqXwg-3tFfUXI08_xnAPf345rK0&_nc_zt=23&_nc_ht=scontent.fceb6-3.fna&_nc_gid=Hn540WDx7lZPE6oC2nrCJg&_nc_ss=7b2a8&oh=00_AQEiHNT2Lo-Zo2-Stistr2J8lt_O2imAZ8jaVzOBwbEoxg&oe=6A83C137" alt="Kaedahara Kazuha" width="300">
         <br><br>
         <nav>
-            <a href="page1.php">Biography</a>
+            <a href="bio.php">Biography</a>
             <br>
-            <a href="page3.php">Contact Information and Socials</a>
+            <a href="Contact.php">Contact Information and Socials</a>
         </nav>
    
     </body>  
