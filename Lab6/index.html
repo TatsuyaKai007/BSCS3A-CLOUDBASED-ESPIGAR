@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="RangerOff.jpg" id="Image" alt="Ranger Off" width="500">
+    
+    <br>
+
+    <button onclick="document.getElementById('Image').src = 'RangerOn.png'">Go go Samurai</button>
+    <button onclick="document.getElementById('Image').src = 'RangerOff.jpg'" width="500">Power Down</button>
+
+     <p id="content"></p>
+
+    <input type="text" id="name" placeholder="Enter your Name">
+    <button onclick="hello()">Submit</button>
+
+    <script>
+        function hello() {
+            let name = document.getElementById("name").value;
+            document.getElementById("content").innerHTML = "Hello " + name + "!";
+        }
+    </script>
+</body>
+</body>
+</html>
