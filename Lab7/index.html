@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+     <p id="result"> Enter Your Score</p>
+    <input type="text" id="score" placeholder="Enter your Score">
+    <input type="text" id="totalScore" placeholder="Enter Total Score">
+    <select id="grading">
+        <option value="percentage">Percentage</option>
+        <option value="letter">Pass/Fail</option>
+        </select>
+    <button onclick="CalcGrade()">Calculate Grade</button>
+    <br>
+    <img src="BulbOff.png" id="Image" alt="Ranger Off" width="250">
+   
+    <script>
+        function CalcGrade() {
+            let score = Number(document.getElementById("score").value);
+            let totalScore = Number(document.getElementById("totalScore").value);
+            let grading = Number(document.getElementById("grading").value);
+
+            let result = Number(document.getElementById("result").value)   ;
+            
+
+            if(document.getElementById(grading).value === "percentage") {
+                if(result >= 91) {
+                    result.textContent = "Excellent";
+                    
+                } else if(result >= 90) {
+                    comment = "Great";
+                } else if(result >= 85) {
+                    comment = "Good";
+                } else if(result >= 80) {
+                    comment = "Nice";
+                } else {
+                    comment = "Ahay man";
+                }
+                
+                result.textContent = "Your grade is: " + percentage.toFixed(2) + "%\nComment: " + comment;
+                
+
+        }else if(document.getElementById(grading).value === "letter") {
+                if(percentage >= 75) {
+                    comment = "Pass";
+                } else {
+                    comment = "Fail";
+                }
+            }
+
+            document.getElementById("Image").src = percentage >= 75 ? "BulbOn.png" : "BulbOff.png";
+            alert("Your grade is: " + percentage.toFixed(2) + "%\nComment: " + comment);
+  
+        }
+    </script>
+
+
+    </body>
+</html>
