@@ -4,6 +4,7 @@ if (!isset($_SESSION["username"])) {
     header("Location: index.php");
     exit();
 }
+
 ?>
 
 
@@ -15,8 +16,15 @@ if (!isset($_SESSION["username"])) {
     <title>Document</title>
 </head>
 <body>
-    <h2> Hello <?php echo $_SESSION["username"]; ?> </h2>
-    <p> You have succesfully logged in! </p>
+     <form method="POST">
+        <h2> Hello <?php echo $_SESSION["username"]; ?> </h2>
+        <p> You have succesfully logged in! </p>
+         <label for="edit">EDIT PROFILE
+            <button><a href="edit.php">Edit Profile</a></button>s
+            
+        </label>
+    </form>
+
     <a href="logout.php">Logout</a>
 </body>
 </html>
